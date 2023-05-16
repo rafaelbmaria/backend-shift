@@ -24,7 +24,8 @@ public class Modelo {
     private BigDecimal potencia;
     //private Double potencia;
 
-    @Transient
+    @ManyToOne
+    @JoinColumn(name = "ID_MARCA")
     private Marca marca;
 
 }
